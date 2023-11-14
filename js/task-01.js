@@ -1,5 +1,6 @@
 function calculateCategories() {
-    const categories = Array.from(document.querySelectorAll('ul#categories>li'));
+    const categoriesContainer = document.querySelector('ul#categories');
+    const categories = Array.from(categoriesContainer.children);
     console.log('Number of categories:', categories.length);
 
     categories.forEach(category => {
